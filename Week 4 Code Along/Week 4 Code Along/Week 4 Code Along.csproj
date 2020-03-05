@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{95976B93-F85C-49A9-BFE9-CCD428614CB9}</ProjectGuid>
+    <ProjectGuid>{23D482F3-D929-4877-8D74-88CFBBD26D63}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Week_3_code_along</RootNamespace>
-    <AssemblyName>Week 3 code along</AssemblyName>
+    <RootNamespace>Week_4_Code_Along</RootNamespace>
+    <AssemblyName>Week 4 Code Along</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -63,14 +63,13 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Dog.cs" />
-    <Compile Include="Duck.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
