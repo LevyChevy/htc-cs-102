@@ -9,9 +9,20 @@
     <Grid>
         <StackPanel Margin="10,10,10,10">
             <TextBlock>Title</TextBlock>
+            <ListView Name="lvMovies" Height="150px" Margin="0,0,0,10" MouseDoubleClick="lvMovies_MouseDoubleClick">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="150" Header="Title" DisplayMemberBinding="{Binding Title}"></GridViewColumn>
+                        <GridViewColumn Width="100" Header="Release Year" DisplayMemberBinding="{Binding ReleaseYear}"></GridViewColumn>
+                        <GridViewColumn Width="100" Header="Rotten Score" DisplayMemberBinding="{Binding MovieSocre}"></GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
             <TextBox Name="titleInput" Margin="0,0,0,15"></TextBox>
             <TextBlock>Release Year</TextBlock>
             <TextBox Name="releaseYearInput" Margin="0,0,0,15"></TextBox>
+            <TextBlock>Score</TextBlock>
+            <TextBox Name="movieScoreInput" Margin="0,0,0,15"></TextBox>
             <Button HorizontalAlignment="Center" Margin="0,0,0,15" Click="AddButton_Click">Add</Button>
             <Button HorizontalAlignment="Center" Click="ShowButton_Click">Show All Movies</Button>
         </StackPanel>
