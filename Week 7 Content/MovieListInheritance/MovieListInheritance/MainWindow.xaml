@@ -12,6 +12,8 @@
                 <GridView>
                     <GridViewColumn Width="150" Header="Title" DisplayMemberBinding="{Binding Title}"></GridViewColumn>
                     <GridViewColumn Width="100" Header="Release Year" DisplayMemberBinding="{Binding ReleaseYear}"></GridViewColumn>
+                    <GridViewColumn Width="125" Header="Animation Studio" DisplayMemberBinding="{Binding AnimationStudio}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="Animation Type" DisplayMemberBinding="{Binding AnimationType}"></GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>
